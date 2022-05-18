@@ -1,0 +1,178 @@
+/* fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+/* variáveis */
+
+:root {
+	--text-color: #000000;
+	--main-color: #97BEF4;
+	--title-color: #426CA7;
+	--fonte: 'DM Sans', sans-serif;
+}
+
+/* reset */
+
+* {
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+	font-family: var(--fonte);
+	font-size: 2rem;
+	
+}
+
+/* estilo */
+
+html {
+	font-size: 62.5%;
+  }
+
+body {
+	max-width: 1360px;
+	background-image: url("/assets/images/background.png");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 6rem;
+}
+
+header > p {
+	font-size: 2.4rem;
+	font-weight: 700;
+	color: var(--main-color);
+	margin: 0 10rem;
+}
+
+nav {
+	display: flex;
+	justify-content: flex-end;
+	margin: 0 10rem;
+}
+
+nav > a {
+	margin: 0 1.5rem;
+	font-size: 2.4rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: var(--text-color);
+}
+
+nav > a:hover {
+	color: var(--title-color);
+	transition: 0.3s;
+
+}
+
+section#portfolio {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-areas: "t t . ."
+						 "md ui cm pd"
+						 "de col il mm";
+	padding-left: 8rem;
+	padding-right: 10rem;
+	gap: 4rem;
+	margin-top: 10rem;
+}
+
+#portfolio > h2 {
+	grid-area: t;
+	font-size: 4.5rem;
+	font-weight: 400;
+	padding-right: 15rem;
+
+}
+
+.md {
+	grid-area: md;
+	font-size: 2rem;
+	font-weight: 400;
+	text-align: center;
+}
+
+.ui {
+	grid-area: ui;
+	font-size: 2rem;
+	font-weight: 400;
+	text-align: center;
+}
+
+.cm {
+	grid-area: cm;
+	font-size: 2rem;
+	font-weight: 400;
+	text-align: center;
+}
+
+.pd {
+	grid-area: pd;
+	font-size: 2rem;
+	font-weight: 400;
+	text-align: center;
+}
+
+.de {
+	grid-area: de;
+	font-size: 2rem;
+	font-weight: 400;
+	text-align: center;
+}
+
+.col {
+	grid-area: col;
+	font-size: 2rem;
+	font-weight: 400;
+	text-align: center;
+}
+
+.il {
+	grid-area: il;
+	font-size: 2rem;
+	font-weight: 400;
+	text-align: center;
+}
+
+.mm {
+	grid-area: mm;
+	padding-top: 18rem;
+	
+}
+
+.mm span {
+	font-size: 3.6rem;
+	font-weight: 700;
+}
+
+#muito-mais {
+	font-size: 3.6rem;
+	font-weight: 400;
+}
+
+#muito-mais a {
+	font-size: 3.6rem;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+#muito-mais a:hover {
+	color: var(--title-color);
+	transition-duration: 5s;
+}
+
+#muito-mais a:visited {
+	color: var(--text-color);
+}
+
+footer {
+	display: flex;
+	margin-top: 10rem;
+	padding-bottom: 5rem;
+}
