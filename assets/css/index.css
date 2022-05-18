@@ -32,7 +32,7 @@ html {
 
 body {
 	max-width: 1360px;
-	background-image: url("/assets/images/background.png");
+	background-image: url("../images/background.png");
 	background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -108,44 +108,6 @@ article > p {
 .img-thay {
 	width: 42rem;
     height: 48rem;
-}
-
-/* portfólio */
-
-
-
-
-/* chega mais! */
-
-#chega-mais {
-	display: flex;
-	flex-direction: column;
-	margin: 20rem 0 10rem 0;
-}
-
-#chega-mais a:hover {
-	color: var(--title-color);
-	transition: 0.3s;
-}
-
-#chega-mais a:visited {
-	color: var(--text-color);
-}
-
-#chega-mais > h2 {
-	margin-bottom: 6rem;
-	font-size: 4.5rem;
-	font-weight: 400;
-}
-
-#chega-mais img {
-	vertical-align: middle;
-}
-
-#chega-mais div {
-	display: flex;
-	flex-direction: column;
-	gap: 1.5rem;
 }
 
 footer {
