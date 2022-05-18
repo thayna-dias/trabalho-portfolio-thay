@@ -1,0 +1,312 @@
+/* fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+/* variáveis */
+
+:root {
+	--text-color: #000000;
+	--main-color: #97BEF4;
+	--title-color: #426CA7;
+	--fonte: 'DM Sans', sans-serif;
+}
+
+/* reset */
+
+* {
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+	font-family: var(--fonte);
+	font-size: 2rem;
+	
+}
+
+/* estilo */
+
+html {
+	font-size: 62.5%;
+  }
+
+body {
+	max-width: 1360px;
+	background-image: url('/assets/images/background.png');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 6rem;
+}
+
+header > p {
+	font-size: 2.4rem;
+	font-weight: 700;
+	color: var(--main-color);
+	margin: 0 10rem;
+}
+
+nav {
+	display: flex;
+	justify-content: flex-end;
+	margin: 0 10rem;
+}
+
+nav > a {
+	margin: 0 1.5rem;
+	font-size: 2.4rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: var(--text-color);
+}
+
+nav > a:hover {
+	color: var(--title-color);
+	transition: 0.3s;
+
+}
+
+/* home */
+
+section#home {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 7rem;
+}
+
+section > article {
+	display: flex;
+	flex-direction: column;
+	padding: 0 5rem;
+    margin: 0 10rem;
+	text-align: left;
+}
+
+article > h2 {
+	font-size: 4.5rem;
+	font-weight: 400;
+	margin-left: 0;
+}
+
+article > p {
+	font-size: 2rem;
+	font-weight: 400;
+	line-height: 3.2rem;
+}
+
+.container__img-thay {
+	margin: 3rem 10rem 0 0;
+	padding-right: 35px;
+}
+
+.img-thay {
+	width: 42rem;
+    height: 48rem;
+}
+
+/* currículo */
+
+section#curriculo {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-areas: "xp . cp"
+						 "for . .";
+	gap: 1rem;
+	margin-top: 10rem;
+	padding-left: 15rem;
+}
+
+.experiencia {
+	grid-area: xp;
+}
+
+.experiencia > h2 {
+	font-size: 4.5rem;
+	font-weight: 400;
+	margin-bottom: 3.5rem;
+}
+
+.experiencia > h3 {
+	font-size: 2rem;
+	font-weight: 700;
+	border-bottom: 2px black solid;
+	width: 40rem;
+	padding-bottom: 0.4rem;
+	margin-bottom: 2rem;
+}
+
+.xp {
+	margin-bottom: 2rem;
+}
+
+.empresa {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.cargo {
+	font-size: 2rem;
+	font-weight: 700;
+	color: var(--title-color);
+}
+
+.formacao {
+	grid-area: for;
+	margin-top: -10rem;
+	
+}
+
+.formacao > h3 {
+	font-size: 2rem;
+	font-weight: 700;
+	border-bottom: 2px black solid;
+	width: 40rem;
+	padding-bottom: 0.4rem;
+	margin-bottom: 2rem;
+}
+
+.complementar {
+	grid-area: cp;
+	padding-top: 10rem;
+}
+
+.complementar > h3 {
+	font-size: 2rem;
+	font-weight: 700;
+	border-bottom: 2px black solid;
+	width: 40rem;
+	padding-bottom: 0.4rem;
+	margin-bottom: 2rem;
+}
+
+/* portfólio */
+
+section#portfolio {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-areas: "t t . ."
+						 "md ui cm pd"
+						 "de col il mm";
+	padding-left: 8rem;
+	padding-right: 10rem;
+	gap: 4rem;
+	margin-top: 10rem;
+}
+
+#portfolio > h2 {
+	grid-area: t;
+	font-size: 4.5rem;
+	font-weight: 400;
+	padding-right: 15rem;
+
+}
+
+.md {
+	grid-area: md;
+	font-size: 2rem;
+	font-weight: 400;
+	text-align: center;
+}
+
+.ui {
+	grid-area: ui;
+	font-size: 2rem;
+	font-weight: 400;
+	text-align: center;
+}
+
+.cm {
+	grid-area: cm;
+	font-size: 2rem;
+	font-weight: 400;
+	text-align: center;
+}
+
+.pd {
+	grid-area: pd;
+	font-size: 2rem;
+	font-weight: 400;
+	text-align: center;
+}
+
+.de {
+	grid-area: de;
+	font-size: 2rem;
+	font-weight: 400;
+	text-align: center;
+}
+
+.col {
+	grid-area: col;
+	font-size: 2rem;
+	font-weight: 400;
+	text-align: center;
+}
+
+.il {
+	grid-area: il;
+	font-size: 2rem;
+	font-weight: 400;
+	text-align: center;
+}
+
+.mm {
+	grid-area: mm;
+	padding-top: 18rem;
+	
+}
+
+.mm span {
+	font-size: 3.6rem;
+	font-weight: 700;
+}
+
+#muito-mais {
+	font-size: 3.6rem;
+	font-weight: 400;
+}
+
+
+/* chega mais! */
+
+#chega-mais {
+	display: flex;
+	flex-direction: column;
+	margin: 20rem 0 10rem 0;
+}
+
+#chega-mais a:hover {
+	color: var(--title-color);
+	transition: 0.3s;
+}
+
+#chega-mais a:visited {
+	color: var(--text-color);
+}
+
+#chega-mais > h2 {
+	margin-bottom: 6rem;
+	font-size: 4.5rem;
+	font-weight: 400;
+}
+
+#chega-mais img {
+	vertical-align: middle;
+}
+
+#chega-mais div {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+footer {
+	display: flex;
+	padding-bottom: 5rem;
+}
