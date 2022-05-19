@@ -146,29 +146,21 @@ section#portfolio {
 	
 }
 
-.mm span {
-	font-size: 3.6rem;
-	font-weight: 700;
-}
-
-#muito-mais {
+.mm p {
 	font-size: 3.6rem;
 	font-weight: 400;
 }
 
-#muito-mais a {
+.mm a {
+	color: var(--text-color);
 	font-size: 3.6rem;
 	font-weight: 700;
 	text-decoration: underline;
 }
 
-#muito-mais a:hover {
+.mm a:hover {
 	color: var(--title-color);
-	transition-duration: 5s;
-}
-
-#muito-mais a:visited {
-	color: var(--text-color);
+	transition-duration: 0.3s;
 }
 
 footer {

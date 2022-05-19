@@ -77,13 +77,13 @@ nav > a:hover {
 	margin: 10rem 0 10rem 0;
 }
 
-#chega-mais a:hover {
-	color: var(--title-color);
-	transition: 5s;
+#chega-mais a {
+	color: var(--text-color);
 }
 
-#chega-mais a:visited {
-	color: var(--text-color);
+#chega-mais a:hover {
+	color: var(--title-color);
+	transition: 0.3s;
 }
 
 #chega-mais > h2 {
