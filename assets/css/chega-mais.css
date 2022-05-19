@@ -84,6 +84,7 @@ nav > a:hover {
 #chega-mais a:hover {
 	color: var(--title-color);
 	transition: 0.3s;
+	text-decoration: underline;
 }
 
 #chega-mais > h2 {
