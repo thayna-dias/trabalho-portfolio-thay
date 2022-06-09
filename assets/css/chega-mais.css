@@ -28,7 +28,7 @@
 
 html {
 	font-size: 62.5%;
-  }
+}
 
 body {
 	max-width: 1360px;
@@ -68,23 +68,20 @@ nav > a {
 nav > a:hover {
 	color: var(--title-color);
 	transition: 0.3s;
+}
 
+#formulario button {
+	background-color: white;
+	border: rgba(0, 0, 0, 0.625) 1px solid;
+	border-radius: 2px;
+	padding: 5px;
+	cursor: pointer;
 }
 
 #chega-mais {
 	display: flex;
 	flex-direction: column;
 	margin: 10rem 0 10rem 0;
-}
-
-#chega-mais a {
-	color: var(--text-color);
-}
-
-#chega-mais a:hover {
-	color: var(--title-color);
-	transition: 0.3s;
-	text-decoration: underline;
 }
 
 #chega-mais > h2 {
@@ -97,10 +94,18 @@ nav > a:hover {
 	vertical-align: middle;
 }
 
-#chega-mais div {
-	display: flex;
-	flex-direction: column;
-	gap: 1.5rem;
+#chega-mais a {
+	color: var(--text-color);
+}
+
+#chega-mais a:hover {
+	color: var(--title-color);
+	transition: 0.3s;
+	text-decoration: underline;
+}
+
+.social {
+	margin-left: 20px;
 }
 
 footer {
